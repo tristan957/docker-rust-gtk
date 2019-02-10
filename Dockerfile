@@ -6,4 +6,5 @@ RUN apt-get update; \
 		; \
 	rm -rf /var/lib/apt/lists/*; \
 	rustup install nightly-x86_64-unknown-linux-gnu; \
+	rustup component add rustfmt; \
     rustup component add rustfmt --toolchain nightly;
